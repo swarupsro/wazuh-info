@@ -44,7 +44,7 @@ sudo apt-get upgrade
    Execute the following command to perform a single-step installation of Wazuh:
 
 ```
-   curl -sO https://packages.wazuh.com/4.7/wazuh-install.sh && sudo bash ./wazuh-install.sh -a -i
+   curl -sO https://packages.wazuh.com/4.12/wazuh-install.sh && sudo bash ./wazuh-install.sh -a -i
 ```
 
    After the installation completes, take note of the provided **ID and password**, as you will need these to access the Wazuh dashboard.
@@ -90,17 +90,3 @@ sudo systemctl status wazuh-manager
 
 You have successfully installed Wazuh on your Ubuntu server. For further configuration and detailed usage instructions, refer to the [Wazuh documentation](https://documentation.wazuh.com/current/index.html).
 
----
-
-👨‍💻 Author
-------------
-
-[**Jagadish Tripathy**](https://www.linkedin.com/in/jagadishtripathy/)  
-CEH v.12
-
-* * * * *
-
-⭐ Support
----------
-
-If this documentation helped you, consider giving it a ⭐ on GitHub!
