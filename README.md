@@ -21,7 +21,7 @@ This README provides a brief overview of the installation process for Wazuh on a
    Before starting the installation, ensure your package index is up-to-date. Run the following command in the terminal:
 
   ```
-   sudo apt-get update
+   sudo apt update
   ```
 
 2\. **Upgrade the System**
@@ -29,7 +29,7 @@ This README provides a brief overview of the installation process for Wazuh on a
    Upgrade all installed packages to their latest versions:
 
   ```
-sudo apt-get upgrade
+sudo apt upgrade
 ```
 3\. **Gain Root Privileges**
 
@@ -90,3 +90,13 @@ sudo systemctl status wazuh-manager
 
 You have successfully installed Wazuh on your Ubuntu server. For further configuration and detailed usage instructions, refer to the [Wazuh documentation](https://documentation.wazuh.com/current/index.html).
 
+## Uninstallation Wazuh
+
+
+  ```
+sudo bash wazuh-install.sh --uninstall
+sudo apt remove --purge wazuh-dashboard -y
+sudo apt remove --purge wazuh-manager -y
+sudo apt remove --purge filebeat -y
+sudo apt remove --purge wazuh-indexer -y
+```
